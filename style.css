@@ -1,0 +1,27 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+label {
+    font-weight: bolder;
+}
+
+#formularz {
+    width: 50%;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+input {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
