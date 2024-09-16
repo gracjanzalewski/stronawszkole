@@ -1,67 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularz</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div id="formularz">
-        <form action="https://politechnika.azurewebsites.net/Order/Create" method="POST">
-            <!-- Imie i Nazwisko -->
-            <label>Imię</label>
-            <br>
-            <input name="fname" />
-            <br>
-            <label>Nazwisko</label>
-            <br>
-            <input name="lname" />
-            <br>
-            <!-- Płeć -->
-            <label>Płeć</label>
-            <br>
-            <input type="radio" id="mplec" name="plec" value="Mężczyzna"/>
-            <label for="mplec">Mężczyzna</label>
-            <input type="radio" id="fplec" name="plec" value="Kobieta"/>
-            <label for="mplec">Kobieta</label>
-            <br>
-            <!-- Akceptacja pseudo-regulaminu -->
-            <input type="checkbox" id="regtos" name="regtos" value="zaakceptowano" required>
-            <label for="regtos">Zapoznałem się z <a href="./regulamin.html" target="_blank">regulaminem</a></label>
-            <br>
-            <!-- Select -->
-            <select name="sel">
-                <option value="1">Jeden</option>
-                <option value="2">Dwa</option>
-                <option value="3">Trzy</option>
-            </select>
-            <br>
-            <!-- Data Urodzenia-->
-            <label for="uro">Data urodzenia:</label>
-            <input type="date" id="uro" name="uro">
-            <br>
-            <!-- Losowy plik -->
-            <input type="file" id="profilowe" name="profilowe" accept="image/png, image/jpeg, image/jpg">
-            <br>
-            <!-- Drugi radio -->
-            <input type="radio" id="radio1" name="rad1" value="jeden"/>
-            <label for="radio1">Jeden</label>
-            <input type="radio" id="radio2" name="rad1" value="dwa"/>
-            <label for="radio2">Dwa</label>
-            <input type="radio" id="radio3" name="rad1" value="trzy"/>
-            <label for="radio3">Trzy</label>
-            <br>
-            <input type="radio" id="radioa" name="rad2" value="a"/>
-            <label for="radioa">a</label>
-            <input type="radio" id="radiob" name="rad2" value="b"/>
-            <label for="radiob">b</label>
-            <input type="radio" id="radioc" name="rad2" value="c"/>
-            <label for="radioc">c</label>
-            <br>
-            <!-- Submit -->
-            <input type="submit">
-        </form>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularz</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="formularz">
+            <form action="https://politechnika.azurewebsites.net/Order/Create" method="POST">
+                <h1>Mój formularz</h1>
+                <!-- Imie i Nazwisko -->
+                <label>Imię</label>
+                <br>
+                <input name="fname" />
+                <br>
+                <label>Nazwisko</label>
+                <br>
+                <input name="lname" />
+                <br>
+                <!-- Płeć -->
+                <label>Płeć</label>
+                <br>
+                <input type="radio" id="mplec" name="plec" value="Mężczyzna"/>
+                <label for="mplec">Mężczyzna</label>
+                <input type="radio" id="fplec" name="plec" value="Kobieta"/>
+                <label for="mplec">Kobieta</label>
+                <br>
+                <!-- Akceptacja pseudo-regulaminu -->
+                <input type="checkbox" id="regtos" name="regtos" value="zaakceptowano" required>
+                <label for="regtos">Zapoznałem się z <a href="./regulamin.html" target="_blank">regulaminem</a></label>
+                <br>
+                <!-- Select -->
+                <select name="sel">
+                    <option value="1">Jeden</option>
+                    <option value="2">Dwa</option>
+                    <option value="3">Trzy</option>
+                </select>
+                <br>
+                <!-- Data Urodzenia-->
+                <label for="uro">Data urodzenia:</label>
+                <input type="date" id="uro" name="uro">
+                <br>
+                <!-- Losowy plik -->
+                <input type="file" id="profilowe" name="profilowe" accept="image/png, image/jpeg, image/jpg">
+                <br>
+                <!-- Drugi radio -->
+                <input type="radio" id="radio1" name="rad1" value="jeden"/>
+                <label for="radio1">Jeden</label>
+                <input type="radio" id="radio2" name="rad1" value="dwa"/>
+                <label for="radio2">Dwa</label>
+                <input type="radio" id="radio3" name="rad1" value="trzy"/>
+                <label for="radio3">Trzy</label>
+                <br>
+                <input type="radio" id="radioa" name="rad2" value="a"/>
+                <label for="radioa">a</label>
+                <input type="radio" id="radiob" name="rad2" value="b"/>
+                <label for="radiob">b</label>
+                <input type="radio" id="radioc" name="rad2" value="c"/>
+                <label for="radioc">c</label>
+                <br>
+                <!-- Textarea-->
+                <textarea id="tekst" name="tekst" rows="8">
+                    tekst
+                </textarea>
+                <br>
+                <!-- Submit -->
+                <input type="submit">
+            </form>
+        </div>
+        <div id="tabelka">
+            <table>
+                <thead>
+                    <th scope="col">Imie</th>
+                    <th scope="col">Nazwisko</th>
+                    <th scope="col">Wiek</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Damian</th>
+                        <td>Urban</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Gracjan</th>
+                        <td>Zalewski</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Małgorzata</th>
+                        <td>Charzewska</td>
+                        <td>16</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <ul>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ul>
+            <ol>
+                <li>D</li>
+                <li>E</li>
+                <li>F</li>
+            </ol>
+        </div>
+    </body>
 </html>
